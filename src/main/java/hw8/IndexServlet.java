@@ -1,4 +1,4 @@
-package com.geekhub.hw8;
+package main.java.hw8;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,6 +12,20 @@ public class IndexServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+//        StringBuilder sb = new StringBuilder();
+//
+//        sb.append("<html>");
+//        sb.append("<head>");
+//        sb.append("</head>");
+//
+//        sb.append("<body>");
+//        sb.append("<H1>fdsfsf</H1>");
+//        //TODO: Implement directory listing here
+//        sb.append("</body>");
+//        sb.append("</html>");
+//        resp.getWriter().write(sb.toString());
+
         resp.sendRedirect("/dir/view");
     }
 }
